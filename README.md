@@ -22,6 +22,11 @@ This repository contains a collection of Jupyter Notebooks designed to serve as 
    - Introduction to using the Snowpark library within the Snowpark Python Workspace.
    - Instructions on setting up Snowpark, performing data transformations, and saving results directly to Snowflake tables.
 
+5. **Using MLFlow in Keboola Python Workspaces**:
+   - Introduction to using MLFlow for managing machine learning experiments within Keboola Python Workspaces.
+   - Instructions on setting up experiments, starting and ending runs, logging parameters and metrics, and registering models.
+   - Demonstrates how to log an `input_example` and view results in the MLFlow UI.
+
 ## How to Use These Notebooks
 
 Each notebook is self-contained and provides detailed instructions and code examples. Users can follow along, modify the code as needed, and apply the concepts to their own projects within Keboola.
