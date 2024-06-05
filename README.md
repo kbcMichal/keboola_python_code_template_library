@@ -4,6 +4,7 @@ This repository contains Jupyter Notebooks designed to guide users of the Kebool
 
 ## Notebooks Included
 
+---
 ### Getting Started
 **Introduction to Python Workspace**:
    - Using the Keboola workspace for development and analytics.
@@ -18,6 +19,7 @@ This repository contains Jupyter Notebooks designed to guide users of the Kebool
    - Managing machine learning experiments with MLFlow.
    - Setting up experiments, logging parameters and metrics, and registering models.
 
+---
 ### Advanced Analytics and Machine Learning
 **Data Cleaning and Transformation**:
    - Data cleaning and transformation tasks using Pandas and NumPy.
@@ -40,7 +42,21 @@ This repository contains Jupyter Notebooks designed to guide users of the Kebool
    - Importing packages, loading datasets, exploring data, and cleaning data.
    - Removing redundant columns, solving duplicates, handling missing values, encoding categorical variables, feature scaling, dimensionality reduction, and dataset splitting.
    - Exporting the transformed dataset.
+   
+**AutoML with H2O**:
+   - Load train and test datasets, select the target variable.
+   - Calculate GINI on train and test datasets.
+   - Analyze feature importance using XGBoost and L1 regularized logistic regression, Handle highly correlated features based on user-defined threshold.
+   - Select important features based on analysis, Train models using H2O AutoML and display the leaderboard.
 
+**Using MLFlow Model in Keboola Transformation**:
+   - **Initialize MLFlow and Set Experiment**: Optionally log the usage of the deployed model into an MLFlow experiment. Users can enter or select an experiment name.
+   - **Load the Dataset**: Load the input dataset using the Keboola Common Interface. **Specify the Model Endpoint URL**
+   - **Invoke the Deployed Model**: Send the processed dataframe to the model endpoint and receive predictions.
+   - **Log Model Monitoring Metrics**: Optionally log descriptive statistics of the dataframe for model monitoring in MLFlow.
+
+
+---
 ### Keboola APIs and Components
 **Working with Keboola APIs**:
    - Performing basic operations with Keboola's API.
